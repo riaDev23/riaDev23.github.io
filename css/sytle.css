@@ -396,3 +396,177 @@ span {
   font-size: 2.4rem;
   color: var(--second-bg-color);
 }
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+  .portfolio-box .img-container {
+    scale: .7;
+    height: 25rem;
+  }  
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 2rem 3%;
+  }
+
+  section {
+    padding: 10rem 3% 2rem;
+  }
+
+  .services {
+    padding-bottom: 7rem;
+  }
+
+  .portfolio {
+    padding-bottom: 7rem;
+  }
+
+  .footer {
+    padding: 2rem 3%;
+  }
+
+  .contact form {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .2);
+    display: none;
+  }
+
+  .navbar.active {
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  .home {
+    flex-direction: column;
+  }
+
+  .home-content {
+    width: 80vw;
+  }
+
+  .home-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content h1 {
+    font-size: 4rem;
+  }
+
+  .home img {
+    margin-top: 3rem;
+    width: 40vw;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
+
+  .about-content {
+    width: 80vw;
+  }
+
+  .about img {
+    width: 50vw;
+    margin: 3rem 0;
+  }
+
+  .services h2 {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio h2 {
+    margin-bottom: 2rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-box .img-container {
+    scale: .77;
+    height: 25rem;
+  }
+
+  .contact {
+    padding: 7rem 3%;
+  }
+
+  .contact form {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 617px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+
+  }
+
+  .portfolio-box .img-container {
+    scale: 1;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 365px) {
+  .home-img img{
+    width: 80vw;
+  }
+
+  .about img {
+    width: 80vw;
+  }
+
+  .portfolio-box .img-container {
+    scale: .7;
+    height: 30rem;
+  }
+  
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer p {
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
