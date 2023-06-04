@@ -65,4 +65,49 @@ window.onscroll = () => {
   navbar.classList.remove('active');
 };
 
+// scroll reveal
+ScrollReveal({
+  reset: true,
+  duration: 1500,
+  delay: 200
+});
 
+const defaultDistance = '120px';
+const mobileDistance = '2rem';
+
+const elementsToReveal = [
+  { selector: '.home-content, .heading', origin: 'top' },
+  { selector: '.home-img, .services-container, .portfolio-box, contact form', origin: 'bottom' },
+  { selector: '.home-content h1, .about-img', origin: 'left' },
+  { selector: '.home-content p, .about-content', origin: 'right' }
+];
+
+elementsToReveal.forEach(element => {
+  ScrollReveal().reveal(element.selector, {
+    origin: element.origin,
+    distance: defaultDistance
+  });
+});
+
+if (window.innerWidth < 768) {
+  elementsToReveal.forEach(element => {
+    ScrollReveal().reveal(element.selector, {
+      origin: element.origin,
+      distance: mobileDistance
+    });
+  });
+}
+
+// typed text (typed.js)
+const typed = new Typed('.typed-text', {
+  strings: [
+    'Frontend Developer',
+    'YouTuber',
+    'Blogger'
+  ],
+  typeSpeed: 80,
+  startDelay: 1000,
+  backSpeed: 40,
+  backDelay: 1000,
+  loop: true
+});
