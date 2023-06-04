@@ -416,7 +416,7 @@ span {
 /* BREAKPOINTS */
 @media (max-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 50%;
   }
 
   .portfolio {
@@ -490,7 +490,7 @@ span {
   }
 
   .home-content h3 {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
 
   .home-content h1 {
